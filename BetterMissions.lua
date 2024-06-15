@@ -8,12 +8,13 @@ BetterMissions = {
 	STEP_VEHICLES = {
 		CUTTERS = "HEADER",
 		CORNHEADERS = "HEADER",
+		BEETVEHICLES = "HEADER",
 		COTTONVEHICLES = "HARVESTER",
-		BEETHARVESTING = "HARVESTER",
+		BEETHARVESTING = "HARVESTER",	
 		POTATOHARVESTING = "HARVESTER",
 		POTATOVEHICLES = "HARVESTER",
 		SUGARCANEVEHICLES = "HARVESTER",
-		VEGETABLEVEHICLES = "HARVERTER",
+		VEGETABLEVEHICLES = "HARVESTER",
 		VEGETABLETOOLS = "HARVESTER",
 		PLOWS = "PLOW",
 		SEEDERS = "SOW",
@@ -143,6 +144,10 @@ function BetterMissions.getMissionSteps(mission)
 					step.width = 3.3
 				elseif storeItem.name == "COMMANDER 4500 DELTA FORCE" or storeItem.name == "AEON 5200 DELTA FORCE"  then
 					step.width = 27
+				elseif storeItem.name == "Rexor 6300 Platinum" then
+					step.width = 2.8
+				elseif storeItem.name == "Panther 2" then
+					step.width = 2.7
 				else
 					BetterMissions.warning(storeItem.name .. " has a width of 0")
 				end
